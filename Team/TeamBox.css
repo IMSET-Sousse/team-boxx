@@ -1,0 +1,24 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background:linear-gradient(90deg, #003f5c, #2a6f89, #66a3b3);
+
+  }
+  
+header {
+    background:linear-gradient(90deg, #003f5c, #2a6f89, #66a3b3);
+    background-size: cover;
+    background-position: center;
+    height: 900px;
+  }
+  
+h1, h2, h3 {
+    font-weight: bold;
+  }
+  
+  i {
+    font-size: 2.5rem;
+  }
+  
+footer p {
+    margin: 0;
+  }
