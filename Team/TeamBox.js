@@ -33,3 +33,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
   cards.forEach((card) => observer.observe(card));
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("contactForm");
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    if (!form.checkValidity()) {
+      form.classList.add("was-validated");
+    } else {
+      alert("Thank you for reaching out! We'll get back to you shortly.");
+      form.reset();
+      form.classList.remove("was-validated");
+    }
+  });
+});
