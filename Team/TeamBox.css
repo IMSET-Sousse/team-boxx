@@ -1,24 +1,86 @@
 body {
-    font-family: 'Arial', sans-serif;
-    background:linear-gradient(90deg, #003f5c, #2a6f89, #66a3b3);
+  font-family: 'Arial', sans-serif;
+  background:linear-gradient(90deg, #00283b, #10536b, #66a3b3);
 
-  }
-  
+}
+
 header {
-    background:linear-gradient(90deg, #003f5c, #2a6f89, #66a3b3);
-    background-size: cover;
-    background-position: center;
-    height: 900px;
-  }
-  
+  background:linear-gradient(90deg, #00283b, #10536b, #66a3b3);
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+}
+
 h1, h2, h3 {
-    font-weight: bold;
-  }
-  
-  i {
-    font-size: 2.5rem;
-  }
-  
+  font-weight: bold;
+  color: #fff;
+}
+.lead{
+
+  color: #fff;
+} 
+i {
+  font-size: 2.5rem;
+}
+.Demo{
+  background:linear-gradient(90deg, #00283b, #10536b, #66a3b3);
+}  
+.Funct{
+  background:linear-gradient(90deg, #00283b, #10536b, #66a3b3);
+}  
 footer p {
-    margin: 0;
+  margin: 0;
+}
+
+/* Styling for Features Section */
+#features {
+  background:linear-gradient(90deg, #00283b, #10536b, #66a3b3);  }
+
+#features h2 {
+  font-weight: bold;
+  color: #5d5d5d;
+}
+
+.feature-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  border-radius: 10px;
+  background-color: #041821;
+  box-shadow: 0 4px 6px rgba(68, 130, 185, 0.1);
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.feature-card i {
+  transition: color 0.5s ease;
+}
+
+.feature-card:hover i {
+  color: #007bff;
+}
+
+.feature-card h3 {
+  font-weight: 600;
+}
+
+.feature-card p {
+  color: #666;
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
   }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-card {
+  animation: fadeInUp 1.6s ease forwards;
+}
+ 
